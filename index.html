@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo"></div>
+    <div class="calculadora">
+        <div class="equacao">
+            a:<input type="number" id="a">
+            b:<input type="number" id="b">
+            r:<input type="number" id="r" min="1">
+            <button onclick="geraEquacoes()">Gerar Equações</button>
+            <div id="geral">
+                x²+y²-2ax-2by+a²+b²-r²=0
+            </div>
+            <div id="reduzida">
+                (x-a)²+(y-b)²=r²
+            </div>
+        </div>
+        <div class="ponto">
+            x:<input type="number" id="x">
+            y:<input type="number" id="y">
+            <button onclick="verificaPonto()">Verificar Ponto</button>
+            <div id="verificacaoponto">
+
+            </div>
+        </div>
+        <div class="reta">
+            A:<input type="number" id="A">
+            B:<input type="number" id="B">
+            C:<input type="number" id="C">
+            <button onclick="verificaReta()">Verificar Reta</button>
+            <div id="verificacaoreta">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
