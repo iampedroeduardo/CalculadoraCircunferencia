@@ -1,13 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="conteudo"></div>
-    <div class="calculadora">
+      <div class="nav">
+            <a class="refresh" href="index.html">MATEMÁTICA</a>
+            <div>
+                  <button class="botao"><a href="#anc1">Conteúdo</a></button>
+            <button class="botao"><a href="#anc2">Calculadora</a></button>
+            </div>
+            
+      </div>
+    <div class="conteudo" id="anc1">
+      <h2>Conceitos básicos de uma circunferência</h2>
+      <p>   Circunferência é uma figura geométrica de formato circular, na qual todos os seus pontos encontram-se a mesma distância de seu centro</p>
+      <p>Partes de uma circunferência:</p>
+      <img class="circunferencia" src="circunferencia.webp" alt="circunferencia">
+      <p class="legenda">Raio: reta que liga o centro da circunferência a qualquer ponto de sua extremidade.<br>
+         Diâmetro: reta que passa exatamente pelo centro da circunferência.<br>
+         Arco: parte de uma circunferência entre dois pontos.<br>
+         Corda: reta que liga dois pontos de uma circunferência sem passar pelo centro<br>
+         Tangente: reta que possui um ponto comum a circunferência.<br>
+         Secante: reta que possui dois pontos comuns a circunferência <br>
+         Reta externa: possui nenhum ponto em comum a circunferência
+      </p>
+      <h3>Equação reduzida</h3>
+      <p>É necessário que a medida do raio e as coordenadas do centro da circunferência sejam conhecidas, pois a fórmula da equação reduzida da circunferência é <p class="bold"> (x – a)² + (y – b)² = r²</p> sendo (a, b) a coordenada do centro da circunferência e r é o comprimento do seu raio.</p>
+      <h3>Equação geral</h3>
+      <p>A equação geral é dada a partir do desenvolvimento da equação reduzida: <br>
+            (x – a)² + (y – b)² = r² <br>
+            (x² – 2xa + a²) + (y² – 2yb + y²c ) = r² <br>
+            <p class="bold"> x² + y² – 2xa – 2yb y + a² + b² – r² = 0</p>
+      </p>
+      <h3>Tangente</h3>
+      <p></p>
+      <h3>Secante</h3>
+      <p></p>
+    </div>
+    <div class="calculadora" id="anc2">
+            <h2>Calculadora</h2>
+            <h5>Digite um pontos (a,b) e o raio (r) da circunferência: </h5>
         <div class="equacao">
             a:<input type="number" id="a">
             b:<input type="number" id="b">
@@ -20,6 +57,7 @@
                 (x-a)²+(y-b)²=r²
             </div>
         </div>
+        <h5>Verificar a posição de um ponto em relação a circunferência: </h5>
         <div class="ponto">
             x:<input type="number" id="x">
             y:<input type="number" id="y">
@@ -28,6 +66,7 @@
 
             </div>
         </div>
+        <h5>Verificar a posição de uma reta em relação a circunferência:  </h5>
         <div class="reta">
             A:<input type="number" id="A">
             B:<input type="number" id="B">
